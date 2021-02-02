@@ -35,7 +35,7 @@ def down(msg):
         with ydl:
             result = ydl.extract_info(
                 args,
-                download=False  # We just want to extract the info
+                download=True  # We just want to extract the info
             )
 
         if 'entries' in result:
